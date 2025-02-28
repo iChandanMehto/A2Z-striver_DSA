@@ -2,20 +2,20 @@
 
 using namespace std;
 
+// this are pairs.
+
 void explainPair(){
-    pair <int, int> p = {1, 3};
+    pair<int , int> p = {1, 3};
+    cout << p.first << " " <<p.second;
 
-    cout <<p.first << " " <<p.second;
+    pair<int, pair<int ,int>> p1 = {1, {3, 4}};
 
-    pair <int , pair<int , int>> p2 = {1, {3, 4}};
+    cout << p1.first << " " << p1.second.first << " " << p1.second.second << "\n";  
 
-    cout <<p2.first << " " << p2.second.second << " " <<p2.second.first;
-
-    pair<int, int> arr[]= {{1, 2}, {2, 5}, {5,1}};
-
-    cout <<arr[1].second;
+pair <int, int> arr[] = {{1,3}, {5,6}, {8,9}};
+cout << arr[1].second << " " << endl;
 }
 
 int main(){
-    explainPair();
+explainPair();
 }
