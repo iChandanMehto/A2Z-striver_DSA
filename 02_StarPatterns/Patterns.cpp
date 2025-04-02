@@ -7,7 +7,7 @@ for(int i = 0; i <n; i++){
     for(int j = 0; j<n; j++){
 cout <<"*";
     }
-    cout <<endl;  
+ cout << endl;
 }
 }
 
@@ -237,16 +237,14 @@ void print18(int n){
 for(int j = 0; j <intS; j++){
     cout << " ";
 }
-
         //stars
         for(int j =1; j<=n-i; j++){
-            cout << "* ";
+      cout <<"*";
 
         }
         intS += 2;
         cout << endl;
     }
-
     intS = 8;
 
     for(int i = 1; i <= n; i++){

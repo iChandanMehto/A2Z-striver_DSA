@@ -2,30 +2,61 @@
 
 using namespace std;
 
-void funcOne(int n){
-    for(int i = 1; i <=n; i++){
-        for(int j = 1; j<=i; j++){
-            cout << "* ";
+void print1(int n){
+    for(int i = 0; i<= n; i++){
+        for(int  j = 0; j<=i; j++){
+            cout <<"* ";
+        }
+        cout <<endl;
+    }
+ 
+}
+
+void print2(int n){
+for(int  i = 0; i<=n; i++){
+    for(int j= 0; j<=n; j++){
+ if(j>=n-i){
+    cout<<"* ";
+ }else{
+    cout << " ";
+ }
+    }
+    cout <<endl;
+}
+}
+
+void print3(int n){
+    for(int i  = 0; i<=n; i++){
+        for(int j = 0; j<=n; j++){
+            if(j>=i){
+                cout <<"* ";
+            }else{
+                cout <<" ";
+            }
         }
         cout <<endl;
     }
 }
 
-void funcTwo(int n){
-    for(int i = 1; i<n; i++){
-        for(int j = 1; j<n; j++){
-            
-                cout << "*";
-            
+void print4(int n){
+for(int i = 0; i<= n; i++){
+    for(int j = 0; j<=n; j++){
+        if(j >=n-i){
+            cout <<"*";
+        }else{
+     cout << " ";
         }
-        cout <<endl;
     }
+    cout << endl;
 }
-
-
+}
 int main(){
-int n;
-cin >>n;
-funcTwo(n);
+    int t;
+    cin >>t;
+for(int i = 0; i<t; i++){
+    int n;
+    cin >> n ;
+   print4(n);
+}
 return 0;
 }

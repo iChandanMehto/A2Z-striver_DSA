@@ -36,11 +36,7 @@ void explainVector(){
     vector <int> ::iterator it = v.end();  //=> it mean after the and of vectore container number for example  : [10, 20, 30, 40] , so it mean right after 40;
 
 
-    vector <int> ::iterator it  = v.rend();  //=> it mean 
-
-
-
-
+    vector <int> ::iterator it  = v.rend(); 
 
 
 }
