@@ -121,6 +121,8 @@ void explainDeque(){
 }
 
 void explainStack(){
+//LIFO : Last In Front Out
+
     stack<int>st;
     st.push(1); //{1}
     st.push(2); //{2,1}
@@ -143,6 +145,28 @@ st1.swap(st2);
 //=> its going to swap element st1 element will going to inside the st2 and st2 will in st1.
 }
 
+
+void explainQueue(){
+        //=> Queue is like siliar to stack but its 
+    //=> FIFO : First In First Out,
+    queue<int> q;
+    q.push(1);  // {1}
+    q.push(2); //{1, 2}
+    q.emplace(4); //{1, 2, 4}
+
+    q.back() += 5;  // it will print 9 becuse it will go to  back of queue and add 5 into that number.
+
+    cout<< q.back();   //prints 9,  becuase  4+ 5 = 9 
+
+    //=> Q is {1, 2, 9}
+    cout << q.front(); //=> it will print 9
+
+    q.pop(); //{2, 9} will be answer.
+
+    cout << q.front();  //prints 2
+
+    // size swap empty same as stack
+}
 
 int main(){
     return 0;
