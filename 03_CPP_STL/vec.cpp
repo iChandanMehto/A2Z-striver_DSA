@@ -84,6 +84,27 @@ cout<< v.empty(); //=> it will give answer in boolean value thats means it gonna
 
 
 
+void explainList(){
+    //=> LIst  : is exactly siimiliar to vector but it gives you front operations as well, and its a container and dynamic in nature.
+
+    list<int> ls;
+    ls.push_back(2);  //=> {2}
+    ls.emplace_back(4); //=> {2, 4}
+
+    ls.push_front(5);
+     //=> {5, 2, 4}   : time complexity wise its very cheap compare to a vector 
+
+    ls.emplace_front(2, 4);  
+
+    //rest functions same as vector
+    //=> begin , rbegin, rend, clear, insert , size, swap
+
+    
+
+}
+
+
+
 int main(){
     return 0;
 }
