@@ -118,10 +118,29 @@ void explainDeque(){
 
     // rest function same as vector
     //begin , end , rbegin , rend, clear, insert , size, swap
+}
 
-    
+void explainStack(){
+    stack<int>st;
+    st.push(1); //{1}
+    st.push(2); //{2,1}
+    st.push(3); //{3, 2,1}
+    st.push(3); // {3,3,2,1}
+    st.emplace(5); //{5,3,3, 2,1}
 
+    cout<< st.top(); // prints 5 "** st[2]  is invalid "
 
+    st.pop(); //=> st looks like {3,3, 2, 1}
+
+    cout << st.top();  //=> it will gonna print 3 because of 3 is on top in the stack. 
+
+    cout << st.size(); //=> it will going to print how much element inside the stack.
+
+    cout << st.empty(); //=> the answer will boolean value. so answer will be false because stack is nt empty.
+
+stack <int> st1, st2;
+st1.swap(st2);
+//=> its going to swap element st1 element will going to inside the st2 and st2 will in st1.
 }
 
 
