@@ -32,13 +32,57 @@ void explainVectore(){
      cout <<*(it)<<" ";
      vector <int>::iterator it = v.end();  // => it mean it will going to end of element.
 
-     vector <int>::iterator it = v.rend(); 
+    //  vector <int>::iterator it = v.rend(); 
      
-     vector <int>::iterator it = v.rbegin(); 
+    //  vector <int>::iterator it = v.rbegin(); 
 
-
-
+for(vector<int>::iterator it = v.begin(); it != v.end(); it++){
+    cout <<*(it)<< " ";
 }
+
+for(auto it  = v.begin(); it != v.end(); it++){
+    cout << *(it)<<" ";  //=> auto means iterator in data types.
+}
+
+for(auto  it : v){
+    cout << it << " ";
+}
+
+// {10, 20, 12, 23}
+v.erase(v.begin()+1);
+
+//{10, 20, 12, 35}
+
+v.erase(v.begin()+2, v.begin()+4); //  {10, 20 , 35} [start, end]
+
+
+//Insert Function 
+
+vector<int> v(2, 100); //=> it mean it will going to create two 100 number of containers : {100, 100}.
+
+v.insert(v.begin(), 300);  //=> it will create container like this  : {300, 100, 100} becuase we have already created  and pushed 2 space number of 100.
+
+v.insert(v.begin()+1, 2, 10); //=> it mean we are storing number right after 300 and 2 mean 2 spacing number container of 10. and it look like this  : {300, 10, 10, 100, 100}.
+
+vector<int> copy(2, 50); //=> this is doing the same thing creaating 2 container of 50 in array like syntax.
+
+v.insert(v.begin(), copy.begin(), copy.end()); //=> in this case we are pushing/ adding 2 copy named container insder the v function and we pushing this into starting thats why we have used v.begin() function. and it will look like this  : {50, 50, 300, 10, 10, 100, 100}.
+
+cout <<v.size(); //=> it will show you how many elements are inside the vector. expamle  : {10, 10}.
+
+v.pop_back(); //=> it wil remove last element of vector, example : before=> {10,20}, after => {10}.
+
+v1.swap(v2);  //=> it will swap vector 
+//=> v1 -> {10, 20}
+//=> v2 -> {30, 40}
+//  after swapping=>    v1 -> {30, 40}  v2 -> {10, 20}
+
+v.clear(); //=> erases entire vector.
+
+cout<< v.empty(); //=> it will give answer in boolean value thats means it gonna tell you is you vectore empty or not.
+}
+
+
 
 int main(){
     return 0;
