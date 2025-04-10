@@ -236,7 +236,29 @@ void explainSet(){
         //This is the syntax=>
         auto  it = st.lower_bound(2);
         auto it = st.upper_bound(3);
- 
+
+        void explainMultiSet(){
+            //everything is same as set
+            // only stores duplicate of elements also.
+
+            multiset<int> ms;
+
+            ms.insert(1); //{1}
+            ms.insert(1); //{1, 1}
+            ms.insert(1); //{1, 1, 1}
+
+            ms.erase(1); // all 1 arased //=> in this case it will erase all those elements which  is 1.
+
+            int cnt = ms.count(1);
+
+            // only a single one erased
+            ms.erase(ms.find(1)); //=> and in this case we re pointing by using find() function inside the erase function so it will erase only that particular function.. so it will erase first portion of 1.
+
+
+            ms.erase(ms.find(1), ms.find(1)+2);  //=> in this case first it find 1 and go till  2 and erase both of them.
+            // Rest of all function are same as set.
+        
+        }
 }
 
 int main(){
