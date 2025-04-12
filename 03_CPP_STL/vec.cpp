@@ -238,6 +238,7 @@ void explainSet(){
         auto it = st.upper_bound(3);
 
         void explainMultiSet(){
+
             //everything is same as set
             // only stores duplicate of elements also.
 
@@ -259,6 +260,112 @@ void explainSet(){
             // Rest of all function are same as set.
         
         }
+
+        void explainUSet(){
+            unordered_set<int>st;
+            //lower_bound & upper_bound function does not work , rest all function are same as above , it does not stores in any particular order it has  a better complexity  than  set  in most cases , except some when collision happens.
+        }
+
+        void explainMap(){
+
+            //=> you can think map as a container which stores everything in respect of key and value.
+
+
+            map<int, int> mpp; //=> in this first int is key and second int is value.
+            
+            map <int,  pair<int, int>> mpp;   //=> over here first after map first int is key after pair two ints are value of it.
+            
+            mp<pair<int, int>, int>mpp;  //=> over herre two ints are key and after that one int are value.
+
+            mpp[1] = 2; //=> {1, 2} //=> this is how stores value internally in a map.
+
+            mpp.emplace({3,1}); //=> it will store like => {3, 1}
+
+            mpp.insert({2,4});  //=> it will store like => {2, 4}.
+
+            //=> above elements are store like this  : [{1,2}, {2,4}, {3,1}]
+
+            //=> map stores unique keys in sorted order.
+
+            mpp[{2, 3}] = 10;  //=> 10 is value of 2, 3.
+
+            for(auto it : mpp){
+                cout << it.first <<  " " << cout it.second << endl;
+            }
+            cout << mpp[1];  //=> it will give you first value.
+
+            cout <<mpp[5];  //=> it will give you null & if try to print it will give you 0.
+
+            auto it = mpp.find(3); //=> it help you to find 3 key in map.
+
+            cout << *(it).second; //=> and you wanna know  value of it  you have to  use this method.
+
+            auto it = mpp.find(5);
+
+            //This is the syntax
+            auto it = mpp.lower_bound(2);
+            auto it = mpp.upper_bound(3);
+
+
+            //erase , swap , size , empty , are same  as above.
+        }
+
+        void explainMultiMap(){
+            //everything same as map , only it can store multiple keys
+
+            //only mpp[key] cannot be used here
+        }
+
+        void explainUnorderedMap(){
+            // same as set  and unordered_set  diffrence.
+            //=> will have unique but it will not shorted
+
+        }
+
+bool comp(pair<int, int>p1, <int, int>p2){
+    if(p1.second<p2.second) return true;
+    if(p1.second>p2.second) return false;
+    //they are same
+
+    if(p1.first > p1.first) return true;
+    return false;
+
+
+}
+        void explainExtra(){
+            sort(a, a+n);
+            sort(v.begin(), v.end());  //=> method for sorting container and vector.
+
+            sort(a+2,  a+4);
+
+            sort(a, a+n, greater<int>);
+
+            pair<int, int>  a[] = {{1,2}, {2,1}, {4,1}};
+
+            //sort it according to second element
+            //if second element is same ,then sort it according to first element  but in descending
+
+            sort(a, a+n, comp);
+            // {{4,1}, {2,1}, {1,2}};
+
+            int num  = 7;
+            int cnt = __builtin_popcount();
+
+
+            long long  num = 18347198237491872394;
+            int cnt = __builtin_popcountll(); //=> it number is too long;
+
+            string s = "123";
+
+            do{
+                cout << s<< endl;
+            } while(next_permutation(s.begin(), s.end()));  //=> basically it going to loop through all those combination of 123 .
+
+            int maxi = *max_element(a, a+n); //=> for ex: {1, 10, 5, 8} it will find maximum value of element if you use *max_element.
+
+        }
+
+        
 }
 
 int main(){
