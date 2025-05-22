@@ -14,7 +14,7 @@ void explainPair(){
 
 pair <int, int> arr[] = {{1,3}, {5,6}, {8,9}};
 cout << arr[1].second << " " << endl;
-}
+} //=> we can also create array of pairs.
 
 int main(){
 explainPair();
