@@ -27,5 +27,11 @@ int main() {
 cout <<   sumArr+=sumArr[i];
     }
 
+
+//     Common Mistakes
+// Don't access index out of bounds (like numbers[10] if size is 5)
+
+// Array size must be known at compile time (unless you're using std::vector)
+
     return 0;
 }
