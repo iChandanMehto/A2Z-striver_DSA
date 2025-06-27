@@ -49,6 +49,6 @@ int main(){
    int a = 36, b = 60;
   int basicMaths = intGCDOne(a, b);
 cout << basicMaths<< endl;
- 
+
     return 0;
 }
