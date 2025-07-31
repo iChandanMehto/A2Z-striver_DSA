@@ -8,7 +8,7 @@ int digitCount(int n) {
         n = n / 10;
     }
     return cnt;
-}
+} 
 
 int main() {
     int n;

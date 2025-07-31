@@ -41,6 +41,7 @@ if(cnt == 2) cout << "true";
 else cout << "false";
 }
 
+
 int main(){
     int n; 
     cin >> n;
