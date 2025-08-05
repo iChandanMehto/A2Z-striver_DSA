@@ -10,8 +10,19 @@ cnt++;
 print();
 }
 
+//Print Number 1 to 5 .
+
+void naturalNum(int Lrange, int Urange){
+    if(Lrange>Urange)
+    return;
+    cout << Lrange<< endl; 
+    naturalNum(Lrange+1, Urange);
+}
+
 
 int main(){
-print();
+int input;
+cin >> input;
+naturalNum(1, input);
 return 0;
 }
