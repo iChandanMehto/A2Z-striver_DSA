@@ -64,9 +64,36 @@ return n+ sumN(n-1);
 
 }
 
+//  sum of first N natural number using paramter
+
+void sumnums(int i , int sum){
+    if(i<1){
+        cout << sum<< endl;
+        return;
+    }
+    sumnums(i-1, sum+i);
+}
+
+// sum of first N natural number using functional
+
+int  funcSum(int n){
+    if(n==0)  return 0;
+    return n+funcSum(n-1);
+
+}
+
+// factorial of first n natural  numbers 
+int  factSum(int n){
+    if(n==0)  return 1;
+    return n*factSum(n-1);
+
+}
+
+
+
 int main(){
     int input;
     cin>> input;
-sumN( input);
+cout << factSum( input);
     return 0;
 }
