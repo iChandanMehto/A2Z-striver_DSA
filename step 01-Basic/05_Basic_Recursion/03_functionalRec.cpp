@@ -19,11 +19,15 @@ bool func(int i, string &s) {
 }
 
 
+
+
 int main(){
     string s   = "madam";
     cout << func(0, s);
     return 0;
 }
+
+
 
 // int main(){
 // int n;    

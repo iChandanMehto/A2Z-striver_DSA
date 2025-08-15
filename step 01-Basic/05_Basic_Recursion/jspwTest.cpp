@@ -101,7 +101,10 @@ int  factSum(int n){
 
 // Print an array
 // Given an array and its size, print all elements using recursion.
-
+int printArr(int arr[], int i){
+    if(i <1) return 0;
+    printArr( arr[])
+}
 
 
 int main(){
