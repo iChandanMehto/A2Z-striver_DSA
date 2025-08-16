@@ -19,13 +19,29 @@ bool func(int i, string &s) {
 }
 
 
+int fabonacciFun(int n){
+    if(n<= 1) return  n;
+    int last  = fabonacciFun(n-1);
+    int slast = fabonacciFun(n-2);
+    return last + slast;
 
+}
 
 int main(){
-    string s   = "madam";
-    cout << func(0, s);
+    cout << fabonacciFun(4);
     return 0;
 }
+
+
+
+
+// int main(){
+//     string s   = "madam";
+//     cout << func(0, s);
+//     return 0;
+// }
+
+
 
 
 
