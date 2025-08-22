@@ -1,0 +1,2 @@
+min data's : 1
+max data's : 9
