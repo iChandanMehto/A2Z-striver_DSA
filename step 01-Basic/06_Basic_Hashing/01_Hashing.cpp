@@ -2,9 +2,6 @@
 
 using namespace std;
 
-int hashingFun(){
-    
-}
 
 int main(){
     int n;
