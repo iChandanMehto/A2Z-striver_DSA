@@ -363,9 +363,7 @@ bool comp(pair<int, int>p1, <int, int>p2){
 
             int maxi = *max_element(a, a+n); //=> for ex: {1, 10, 5, 8} it will find maximum value of element if you use *max_element.
 
-        }
-
-        
+        }        
 }
 
 int main(){
