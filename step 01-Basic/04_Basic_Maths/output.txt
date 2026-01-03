@@ -1,1 +1,1 @@
-Number of digits: 4
+4
